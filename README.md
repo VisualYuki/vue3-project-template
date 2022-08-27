@@ -1,59 +1,87 @@
-# vue-project
+- [Редактирование Readme.md (Frontend, Backend)](#редактирование-readmemd-frontend-backend)
+- [Для FRONTEND разработчика](#для-frontend-разработчика)
+	- [FrontEnd начало работы](#frontend-начало-работы)
+	- [Плагины для VS Code](#плагины-для-vs-code)
+		- [EditorConfig](#editorconfig)
+		- [Prettier](#prettier)
+		- [Eslint](#eslint)
+		- [Conventional commits ()](#conventional-commits-)
+	- [Библиотеки](#библиотеки)
+		- [Dependences](#dependences)
+		- [devDependences](#devdependences)
+	- [Cтруктура проекта](#cтруктура-проекта)
+	- [Особенности сайта](#особенности-сайта)
+	- [Полезные ссылки](#полезные-ссылки)
 
-This template should help get you started developing with Vue 3 in Vite.
+# Редактирование Readme.md (Frontend, Backend)
 
-## Recommended IDE Setup
+-  Убедительная просьба следить за структурой и чистотой написанного вами текста.
+-  Обновлять документацию, если меняете или добавляете что-то (исходя из доки будет понятно, что стоит обновить).
+-  Использовать markdown preview для отслеживания корректности вашего текста
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+# Для FRONTEND разработчика
 
-## Type Support for `.vue` Imports in TS
+## FrontEnd начало работы
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+-  Наличие установленной node.js (версию смотреть в package.json в поле engines), проверить в консоли версию и понять, что они установлены `node -v` и `npm -v`
+-  Установить все нужное для первой работы `npm run start-dev`
+-  Установить линтеры (раздел ниже для VS Code), либо установить плагины для вашей IDE.
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+## Плагины для VS Code
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+### EditorConfig
 
-## Customize configuration
+-  Подключить плагин [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+### Prettier
 
-## Project Setup
+-  Подключить плагин [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
-```sh
-npm install
-```
+### Eslint
 
-### Compile and Hot-Reload for Development
+-  Подключить плагин [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
-```sh
-npm run dev
-```
+### Conventional commits ()
 
-### Type-Check, Compile and Minify for Production
+-  Плагин для создания имени коммита по алгоритму
+-  Полезные ссылки
+   -  https://www.conventionalcommits.org/en/v1.0.0/
+   -  https://gitmoji.dev/
+-  Подключить плагин [Conventional Commits](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits)
 
-```sh
-npm run build
-```
+<!--### Style lint
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
 
-```sh
-npm run test:unit
-```
+-  Подключить плагин [stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)-->
 
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
+## Библиотеки
 
-```sh
-npm run build
-npm run test:e2e # or `npm run test:e2e:ci` for headless testing
-```
+### Dependences
 
-### Lint with [ESLint](https://eslint.org/)
+-  vue3 - https://vuejs.org/
+-
 
-```sh
-npm run lint
-```
+### devDependences
+
+-  vite - https://vitejs.dev/
+-  prettier - https://prettier.io/
+-  editorconfig - https://editorconfig.org/
+-  hucky - https://typicode.github.io/husky/#/
+-  eslint-plugin-vue - https://eslint.vuejs.org/ , https://eslint.org/
+
+## Cтруктура проекта
+
+-  .husky - автоматически сгенерированная папка. В файле pre-commit указывается npm скрипт.
+-  .vscode - настройки для VS Code, если вы им пользуетесь.
+-  public
+-  src
+   -  assets
+   -  componets
+   -
+
+## Особенности сайта
+
+1.
+2.
+
+## Полезные ссылки
