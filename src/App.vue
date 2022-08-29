@@ -1,23 +1,16 @@
-<script setup lang="ts">
-	import {RouterLink, RouterView} from "vue-router";
-	import HelloWorld from "./components/HelloWorld.vue";
-</script>
-
-<template>
-	<header>
-		<img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-		<div class="wrapper">
-			<HelloWorld msg="You did it!" />
-
-			<nav>
-				<RouterLink to="/">Home</RouterLink>
-				<RouterLink to="/about">About</RouterLink>
-			</nav>
-		</div>
-	</header>
-
-	<RouterView />
+<template lang="pug">
+.p-5
+	date-picker( start-view="day" placeholder="placeholder1" )
+	date-picker( start-view="day" placeholder="placeholder2" )
 </template>
 
-<style scoped></style>
+<script lang="ts">
+	import datepicker from "./components/date-picker/DatePicker.vue";
+	import {defineComponent} from "vue";
+
+	export default defineComponent({
+		components: {"date-picker": datepicker},
+	});
+</script>
+
+<style scoped lang="scss"></style>

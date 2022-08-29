@@ -8,7 +8,7 @@
 	"disallowSpaceAfterCodeOperator": true,
 	"disallowStringConcatenation": true,
 	"requireClassLiteralsBeforeAttributes": true,
-	"requireLowerCaseAttributes": true,
+	"requireLowerCaseAttributes": null,
 	"requireLowerCaseTags": true,
 	"requireStrictEqualityOperators": true,
 	"validateAttributeQuoteMarks": "\"",
@@ -17,5 +17,6 @@
 	"validateIndentation": "\t",
 	"requireLineFeedAtFileEnd": null,
 	"validateAttributeSeparator": null,
-	"disallowClassAttributeWithStaticValue": null
+	"disallowSpacesInsideAttributeBrackets": null,
+	"requireSpacesInsideAttributeBrackets": true
 }
